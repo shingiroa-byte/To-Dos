@@ -1,0 +1,21 @@
+{
+  "name": "weekly-workbench-reminder-service",
+  "version": "1.0.0",
+  "description": "Always-on backend for The Weekly Workbench — stores tasks and sends Telegram reminders on a schedule, even when the browser is closed.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3",
+    "pg": "^8.11.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
